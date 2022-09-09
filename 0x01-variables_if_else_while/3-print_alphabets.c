@@ -17,7 +17,7 @@ int main(void)
 	{
 		putchar(lowabc);
 	}
-	for (upabc = 'a'; upabc <= 'z'; upabc++)
+	for (upabc = 'A'; upabc <= 'Z'; upabc++)
 	{
 		putchar(upabc);
 	}
