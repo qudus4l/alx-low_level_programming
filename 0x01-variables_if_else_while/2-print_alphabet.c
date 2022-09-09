@@ -15,7 +15,6 @@ int main(void)
 	for (lowabc = 'a'; lowabc <= 'z'; lowabc++)
 	{
 		putchar(lowabc);
-		putchar('');
 	}
 	return (0);
 }
