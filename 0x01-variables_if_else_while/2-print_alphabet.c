@@ -16,5 +16,6 @@ int main(void)
 	{
 		putchar(lowabc);
 	}
+	putchar('\n')
 	return (0);
 }
