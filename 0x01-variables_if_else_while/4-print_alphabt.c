@@ -14,7 +14,7 @@ int main(void)
 
 	for (lowabc = 'a'; lowabc <= 'z'; lowabc++)
 	{
-		if (lowabc != 'q' && lowabc != 'e'
+		if (lowabc != 'q' && lowabc != 'e')
 				putchar(lowabc);
 	}
 	putchar('\n');
