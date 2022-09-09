@@ -11,6 +11,7 @@
 int main(void)
 {
 	char lowabc;
+	char upabc;
 
 	for (lowabc = 'a'; lowabc <= 'z'; lowabc++)
 	{
