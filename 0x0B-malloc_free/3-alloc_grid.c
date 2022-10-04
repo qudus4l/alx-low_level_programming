@@ -1,32 +1,30 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * alloc_grid - A function that returns a pointer to a
- * 2 dimensional array of integers
- * @width: An input integer at number of columns
- * @height: An input integer at number of rows
- * Return: pointer to a 2D array, NULL on failure
+ * main - Entry Point
+ * atoi is a function that converts a string into an int
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
-int **alloc_grid(int width, int height)
+int main(int argc, char *argv[])
 {
-	int **array, i = 0, j = 0;
+	int i, res = 1;
 
-	if (width <= 0 || height <= 0)
-		return (NULL);
-
-	array = (int **)malloc(sizeof(int *) * height);
-	if (array == NULL)
-		return (NULL);
-	for (; i < height; i++)
+	if (argc != 3)
 	{
-		array[i] = (int *)malloc(sizeof(int) * width);
-		if (array[i] == NULL)
-			return (NULL);
+		printf("%s\n", "Error");
+		return (1);
 	}
-
-	for (i = 0; i < height; i++)
-		for (; j < width; j++)
-			array[i][j] = 0;
-	return (array);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			res *= atoi(argv[i]);
+		}
+		printf("%d\n", res);
+	}
+	return (0);
 }
+
